@@ -24,8 +24,7 @@ public class Solution {
                 else if (board[i][j]=='*')
                     board[i][j]='0';
             }
-        }
-        
+        }   
     }
     
     private void boundaryDFS(char[][] board, int i, int j){
