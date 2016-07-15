@@ -24,14 +24,12 @@ public class Solution {
 		int result = 0;
 		// push index instead of push parenthese 
 		for(int i=0; i<s.length(); i++){
-			if(s.charAt(i)=='('){
-				stack.push(i);
-			}else{
-				if(stack.size()>1 && s.charAt(stack.peek())=='('){
+			if(s.charAt(i)=='(' && stack.size()>1 && s.charAt(stack.peek())=='('){
 					// transform ()() to (())
 					stack.pop();
 					result = Math.max(result, i-stack.peek());
-				}
+			}else{
+				stack.push(i);
 			}
 		}
 		return result;
