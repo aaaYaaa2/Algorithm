@@ -1,0 +1,28 @@
+============ Tree Traversal Summary ==============
+
+There are 4 mainly types: preorder traversal, In-order traversal, Post-order traversal and Level-order traversal 
+
+1. preorder traversal: 
+order: parent --> left --> right
+both time complexity is O(N), where N is the number of TreeNodes in the tree. 
+----- Recursive Version -------
+inorder(TreeNode node){
+	visit(node);
+	inorder(node.left);
+	inorder(node.right);
+}
+
+---- Depth First Search Iterative Version ---
+iterativePreorder(node){
+	if(node==null) return;
+	s <-- empty stack
+	s.push(node)
+	while(not s.isEmpty()){
+		node <-- s.pop()
+		visit(node) 
+		if(node.right != null) s.push(node.right);
+		if(node.left != null) s.push(node.left);
+	}
+}
+
+
