@@ -25,4 +25,30 @@ iterativePreorder(node){
 	}
 }
 
+3. postorder traversal 
+order: left --> right --> parent 
+both time complexity is O(N) as well 
+
+----- Recusive Version ------
+postorder(TreeNode node){
+	if (node==null) return;
+	postorder(node.left);
+	postorder(node.right);
+	visit(node);
+}
+
+----- Depth First Search ------- 
+postorder(TreeNode node){
+	s <-- empty stack;
+	declare result;
+	while(s is not empty){
+		cur = s.pop();
+		result.add(cur);
+		if(cur.left!=null) s.push(cur.left);
+		if(cur.right!=null) s.push(cur.right);
+	}
+	return result;
+}
+
+
 
