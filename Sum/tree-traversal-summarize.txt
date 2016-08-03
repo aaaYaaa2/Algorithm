@@ -63,6 +63,22 @@ iterativeInorder(node){
 	}
 }
 
+--------- Iterative Inorder Second Version -----------
+iterativeInorder(node){
+	s is an empty stack 
+	new list represent result
+	if(node = null) return result;
+	while(cur != null || s is not empty){
+		while(cur!=null){
+			s push cur;
+			cur = cur.left;
+		}
+		cur = s.pop();
+		result.add(cur);
+		cur = cur.right;
+	}
+}
+
 =======
 3. postorder traversal 
 order: left --> right --> parent 
