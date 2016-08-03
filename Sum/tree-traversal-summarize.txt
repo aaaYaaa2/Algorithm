@@ -20,11 +20,15 @@ iterativePreorder(node){
 	while(not s.isEmpty()){
 		node <-- s.pop()
 		visit(node) 
+		// remember to push right before push left 
+		// so that the left one will pop up first 
+
 		if(node.right != null) s.push(node.right);
 		if(node.left != null) s.push(node.left);
 	}
 }
 
+<<<<<<< HEAD
 2. Inorder traversal 
 inorder: left --> parent --> right
 
@@ -59,4 +63,33 @@ iterativeInorder(node){
 	}
 }
 
+=======
+3. postorder traversal 
+order: left --> right --> parent 
+both time complexity is O(N) as well 
+
+----- Recusive Version ------
+postorder(TreeNode node){
+	if (node==null) return;
+	postorder(node.left);
+	postorder(node.right);
+	visit(node);
+}
+
+----- Depth First Search ------- 
+postorder(TreeNode node){
+	s <-- empty stack;
+	declare result;
+	while(s is not empty){
+		cur = s.pop();
+		// you add to the first/front place of your result 
+		result.addFirst(cur);
+		if(cur.left!=null) s.push(cur.left);
+		if(cur.right!=null) s.push(cur.right);
+	}
+	return result;
+}
+
+
+>>>>>>> c4a8e47173c792cfcf6245ebc34bd9694644f81a
 
