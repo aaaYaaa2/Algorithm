@@ -20,6 +20,9 @@ iterativePreorder(node){
 	while(not s.isEmpty()){
 		node <-- s.pop()
 		visit(node) 
+		// remember to push right before push left 
+		// so that the left one will pop up first 
+
 		if(node.right != null) s.push(node.right);
 		if(node.left != null) s.push(node.left);
 	}
@@ -43,7 +46,8 @@ postorder(TreeNode node){
 	declare result;
 	while(s is not empty){
 		cur = s.pop();
-		result.add(cur);
+		// you add to the first/front place of your result 
+		result.addFirst(cur);
 		if(cur.left!=null) s.push(cur.left);
 		if(cur.right!=null) s.push(cur.right);
 	}
