@@ -25,4 +25,38 @@ iterativePreorder(node){
 	}
 }
 
+2. Inorder traversal 
+inorder: left --> parent --> right
+
+------- Recursive Solution --------
+inorder(node){
+	if(node==null) return;
+	inorder(node.left);
+	visit(node);
+	inorder(node.right);
+}
+
+------ Iterative Inorder ----------
+iterativeInorder(node){
+	s is an empty stack
+	lastNodeVisited initialized as null 
+
+	while( not s isEmpty || node is not null ){
+		if( node is not null ){
+			s.push(node);
+			node = node.left;
+		}else{
+			peekNode = s.peek();
+			// if right child exists and taversing node 
+			// from left child, then move right 
+			if(	peekNode.right!=null and lastNodeVisited!=peekNode.right){
+				node = peekNode.right;
+			}else{
+				visit(peekNode);
+				lastNodeVisited = s.pop();
+			}
+		}
+	}
+}
+
 
