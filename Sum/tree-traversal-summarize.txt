@@ -109,3 +109,30 @@ postorder(TreeNode node){
 
 >>>>>>> c4a8e47173c792cfcf6245ebc34bd9694644f81a
 
+========
+4. level order traversal 
+order: one level after one level from left to right 
+
+----------- Recursive Version ---------------------
+List of List result = list of list;
+levelOrder(TreeNode root){
+	levelHelper(root,1)
+	return result
+}
+
+void levelHelper( TreeNode root, int height){
+	if(root==null) return;
+	if(height > result.size()){
+		result.add(new ArrayList<Integer>());
+	}
+	result.get(height-1).add(root.val);
+	levelHelper(root.left, height+1);
+	levelHelper(root.right, height+1);
+}
+
+----------- Iterative solution ----------------------
+// Use queue to store every level
+// poll them one by one then push them into queue again 
+
+
+

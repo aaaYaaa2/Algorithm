@@ -1,0 +1,90 @@
+2016/08/03 Combination Sum Summary
+
+==========================================
+1. Combination Sum 1
+
+Given a set of candidate numbers C and a target number T
+The same repeated number may be chosen from C *unlimited* number of times
+
+> since there maybe duplicates in candidates, so sorting the candidate is necessary 
+> since the number can be repeated, backtrack start index start from i not i+1
+
+---------- Backtrack ------------
+combinationSum1( candidates, target){
+	sort candidates;
+	create new result list;
+	backtrack1(result, candidates, target, 0, new subResult);
+	return result;
+}
+
+void backtrack1(result, candidates, target, startPoint, subResult){
+	if(target==0){
+		result.add(create a new list and add the subResult);
+		return;
+	}
+	if(target<0) return;
+	// if target>0
+	for( i from startPoint to candidates.length){
+		subRes.add(candidates[i]);
+		backtrack1(result, candidates, target-candidate[i], i, subResult);
+		subRes.remove(subRes.size()-1);
+	}
+}
+
+
+==========================================
+2. Combination Sum 2
+
+Given a collection of number, find the combination to certain target,
+Each number can only be used once
+
+> since there maybe duplicates in candidates, so sorting the candidate is necessary 
+> since each number can only be used once, so the start index of backtrack start at i+1, not i
+
+combinationSum2(candidates, target){
+	sort candidates;
+	create new result list;
+	backtrack2(result, candidates, target, 0, new subResult);
+	return result;
+}
+
+void backtrack2(result, candidates, target, startPoint, subResult){
+	if(target==0){
+		result.add(create a new list and add the subResult);
+		return;
+	}
+	if(target<0) return;
+	// if target>0
+	for( i from startPoint to candidates.length){
+		subResult.add(candidates[i]);
+		backtrack2(result, candidates, target-candiates[i], i+1, subResult);
+		subResult.remove(subResult.size()-1);
+	}
+}
+
+
+==========================================
+3. Combination Sum 3
+
+Given a collection of distinct numbers, a Target C and a target number K 
+
+> since the numbers are distince we don't need to sort 
+> but we need to add more test case since there are C and K 
+
+combinationSum3( K, C){
+	create a new list result;
+	backtrack3(result, subResult, K, 1, C);
+	return result;
+}
+
+void backtarck3(result, subResult, K, start, C){
+	if(subResult.size()==k && n==0){
+		result.add(newly created list of subResult);
+		return;
+	}
+	for( i from start to maxNumber){
+		subResult.add(i);
+		backtrack(result, subResult, K, i+1, C-i);
+		subResult.remove(subComb.size()-1);
+	}
+}
