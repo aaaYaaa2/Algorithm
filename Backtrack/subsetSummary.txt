@@ -1,0 +1,22 @@
+Subset Summarization 
+
+1. Subset I 
+> there is no duplicates in number collection 
+
+you put [] first, then for every older subresults in the final result collection,
+you copy the whole old collection  
+you add new number to the copied old results, 
+at the end of iteration throught all old result for this number, you add them back to the current result. 
+Repeat the process 
+
+
+2. Subset II 
+> there may be duplicates in number collection 
+
+> Similar to Combination, this time you do not need to check the restriction condition, you add it everytime you 
+get a new result. 
+
+> need to deal with duplicates, 
+> you sort, 
+> you skip the duplicates in while loop 
+
