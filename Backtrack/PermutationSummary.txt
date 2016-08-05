@@ -1,0 +1,36 @@
+Permutation Summary 
+
+Permutaitons, the for loop is for candidates position, everytime you change the index of candidates. 
+
+When there is duplicate, first you need to sort the candidates, if the previous one has already been removed (i.e the visited[i-1] has been set to false and of course it can not be the first element), you skip the situation. 
+
+1. Permutations 1
+
+A collection of DISTINCT numbers, return all possible permutation
+
+> In permutation, position is important 
+> Keep an iteration over the length of the result, and put certain number in different places in very iteration 
+
+2. Permutation 2
+
+A collection of numbers that may contain duplicates, return all possible distinct permutations. 
+
+***** Compare and Contrast btw Combinations and Permutation ******
+
+> Question Type: 
+	1. Permutation: distinct numbers VS numbers with duplicates
+			distinct/duplicates ----> Unsort/Sort + noVisited/Visited
+
+	2. Combination: distinct numbers + Sum Bounds + Number Bounds 
+				 VS duplicates + Sum Bounds + repeat allowed 
+				 VS duplicates + Sum Bounds + repeat not allowed 
+
+			more Bounds more conditinal final check
+			distinct/duplicates -----> Unsort/Sort 
+			repeat not allowed/repeat allowed ------> start at i+1 or i
+
+	^^^ Iteration Start Point:
+	   1) Permutation: start at 0 always, put different Number in same Position
+	   2) Combination: start at start point, according to repeat condition, start at different point.  
+
+
