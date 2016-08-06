@@ -1,0 +1,18 @@
+NQueen Problem 
+
+1. NQueen 1
+The n-queens puzzel is the problem of placing n queens on an nxn chessboard such taht no two queens attack each other. 
+
+> method to track the palced positon: 
+3 boolean array, to track col, Left Dialoge (x+y), Right Dialoge(x-y)
+
+> for each row, iterate through the whole columns,
+> if satisfied satisfy all the condition, then add new Array to the current result, 
+> recursively add rows
+> backtrack to the previous status of current result. 
+
+2. NQueen 2
+Output the number of distinct solutions. 
+
+no need to use list to store result, keep a global variable of result, 
+and every time you find a valid result, you add 1 to final result.
