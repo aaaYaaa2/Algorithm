@@ -108,7 +108,7 @@ postorder(TreeNode node){
 
 
 >>>>>>> c4a8e47173c792cfcf6245ebc34bd9694644f81a
-
+pop
 ========
 4. level order traversal 
 order: one level after one level from left to right 
@@ -133,6 +133,21 @@ void levelHelper( TreeNode root, int height){
 ----------- Iterative solution ----------------------
 // Use queue to store every level
 // poll them one by one then push them into queue again 
+
+
+>> Problem Summary
+
+***Iterative solution: 
+1. While condition:
+	Preorder: stack is not empty 
+	Inorder: cur!=null && stack is not empty
+	Postorder: stack is not empty
+
+2. push left and right order
+	Preorder: pop -> add -> push right -> push left;
+	Inorder: push left(repeat) -> pop -> add node -> push right (if exist);
+	Postorder: pop -> add first -> push left -> push right;
+
 
 
 
