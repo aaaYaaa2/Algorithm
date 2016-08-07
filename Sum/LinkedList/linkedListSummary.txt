@@ -1,0 +1,83 @@
+Problems:
+
+Delete
+=========
+1. Delete that node given only that node 
+	> Set the value of current node to next node 
+	> Set the node.next = node.next.next;
+
+2. Delete all nodes with specific value 
+	> In case of the target exists at the front, use while loop to iterate to the right node 
+	> then you point current node to head, while cur!=null && cur.next!=null 
+		if cur.next....
+		- encounter target val: cur.next = cur.next.next;
+		- not target: cur = cur.next;
+
+3. Remove Duplicates from Sorted LinkedList 
+Delete all duplicates such that each element appear only once 
+	> since the linkedlist is already sorted, so we can took advantage of this, change the != to larger than 
+	> similar step as 2. 
+
+4. Remove Nth Node from the End of the list 
+Use the fast and slow iterator 
+> progress the fast to n place ahead
+> then iterator slow (from the start) and fast together, until the fast reach the end of the list 
+> then we use the slow to remove the Nth 
+
+Reverse
+========
+1. Reverse Linked List
+	> a new null head, prev
+	> while the current node is not null 
+		> create a temporary node to store the next element to be reversed 
+		> set the current.next = prev;
+		> set prev = current; // point the previous to the current new head;
+		> set current = next;  
+
+Intersection
+=============
+1. Intersection of Two LinkedLists 
+
+	> GET the length of both list A and list B 
+	> while(length of A larger than length of B) move headA to its next
+	> while(length of B larget than length of B) move headB to its next
+	/// now we have both list in the same length 
+	> we iterate them together, until we reach same node, 
+	> return the same node we found in last step 
+
+Cycle
+======
+1. LinkedList Cycle
+Given a linked list, determine if it has a cycle in it;
+> keep both a fast and slow iterator; 
+
+Swap Nodes
+==========
+1. Given a linked list, swap every two adjacent nods and returns its head. 
+	> keep a dummyhead, reserve the dummyhead.next = head;
+	> create a new current node point to dummyhead;
+	> while current.next!=null && current.next.next!= null
+		> create first and second node 
+
+		> first.next = second.next;
+		> current.next = second;
+		> second.next = first;
+		> current = current.next.next;
+
+
+Merge
+======
+1. Merge Two Sorted Lists
+> keep a dummyHead, dummyHead.next = head
+> create a new node current point to dummyHead
+> while l1 !=null or l2 !=null 
+	> if(l1==null || l2!=null && l1.val>l2.val){
+		current.next = l2;
+		l2 = l2.next;
+	  }else{
+	  	current.next = l1;
+	  	l1 = l1.next;
+	  }
+	  current = current.next;
+
+2. 
