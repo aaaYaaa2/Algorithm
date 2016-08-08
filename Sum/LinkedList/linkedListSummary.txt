@@ -80,4 +80,34 @@ Merge
 	  }
 	  current = current.next;
 
-2. 
+
+Reorder
+=======
+1. Odd Even Linked List
+
+Given a singly linked list, group all odd/even nodes together, the relative order of them cannot be changed 
+Do it with O(n) time and O(1) space: 
+*** WHAT DOES O(1) SPACE MEAN: 
+O(1) space means the algorithm transform the input using a small amount of extra memory. O(1) memory. 
+So changing the reference is O(1) space, but create with something like new ... is not 
+
+while(even!=null && even.next!=null){
+			odd.next = even.next;
+			odd = odd.next;
+			even.next = odd.next;
+			even = even.next;
+		}
+		odd.next = evenHead;
+		return head;
+
+2. Sort a LinkedList in O(nlog(n)) time using constant space 
+
+A typical merge sort problem, 
+> Use the fast and slow iterator to divide the list into two half everytime 
+> Recursively merge the previous divided part. 
+
+
+
+
+
+
