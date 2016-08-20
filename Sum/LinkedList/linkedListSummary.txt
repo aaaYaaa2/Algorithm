@@ -24,6 +24,12 @@ Use the fast and slow iterator
 > then iterator slow (from the start) and fast together, until the fast reach the end of the list 
 > then we use the slow to remove the Nth 
 
+5***. Remove Duplicates from Sorted List || 
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the 
+original list.
+
+
+
 Reverse
 ========
 1. Reverse Linked List
@@ -51,9 +57,15 @@ Cycle
 Given a linked list, determine if it has a cycle in it;
 > keep both a fast and slow iterator; 
 
+2. LinkedList Cycle II 
+Given a linked list, return the node where the cycle begin. If there is no cycle, return null. 
+Loop until they meet, then set one of them point to the start of list, when they meet again, 
+this time only single step both, they must meet at the start of cycle 
+
+
 Swap Nodes
 ==========
-1. Given a linked list, swap every two adjacent nods and returns its head. 
+1. Given a linked list, swap every two adjacent nodes and returns its head. 
 	> keep a dummyhead, reserve the dummyhead.next = head;
 	> create a new current node point to dummyhead;
 	> while current.next!=null && current.next.next!= null
@@ -80,6 +92,9 @@ Merge
 	  }
 	  current = current.next;
 
+2. Add Two Numbers 
+
+
 
 Reorder
 =======
@@ -105,6 +120,56 @@ while(even!=null && even.next!=null){
 A typical merge sort problem, 
 > Use the fast and slow iterator to divide the list into two half everytime 
 > Recursively merge the previous divided part. 
+
+3. Insertion Sort LinkedList 
+
+Keep record of real head and a pointer to dummy head. 
+
+// from the start, iterate through the list
+// remember to keep a record of the next element to iterate 
+// everytime we iterate from the start 
+
+4. Reorder List 
+Given a linked list: 0 -> 1 -> 2 -> 3 -> 4
+Reorder it to: 0 -> 4 -> 1 -> 3 -> 2
+This solution is a combination of reverse the list and reorder the list 
+
+reverse the second half of the list then begin to bind the first part and second part together 
+
+**5. Convert Sorted List to Binary Search Tree
+Split the tree into two parts, the middle point should be the parent node, and left to the parent
+goes to the left tree, right to the parent goes to the right subtree. 
+
+"Split method"
+
+5. Reverse LinkedList II
+Reverse a linkedlist from position m to n. 
+1->2->3->4->5->null to 1->4->3->2->5->null 
+
+6. Partition List 
+Given a linkedlist and a value x, partition it such that all nodes less than x come before nodes greater than 
+or equal to x. Preserve the original order of the list. 
+
+keep two dummyheads in partition list and then we can iterate through the linkedlist, 
+append smaller ones to the first dummyhead and larger one to the second dummyhead. 
+
+7. Rotate List
+
+Given a list, rotate the list to the right by k places, where k is non-negative 
+
+Should consider the total length of the list and the number k 
+
+1. iterate to the tail of the list, keep a record there 
+2. Then compute the k%len and find the real head of the list 
+3. set the prev of realhead to null, set the next of the last of original list to to head; 
+
+
+
+
+
+
+
+
 
 
 
