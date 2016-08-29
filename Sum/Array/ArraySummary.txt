@@ -40,4 +40,58 @@ If you were only permitted to complete at most one transaction.
 > keep two global vars, first one is the smallest element so far, second is the largers profit so far 
 > iterate through the array 
 
+/|\ 08/29/16
+
+Pascal Triangle
+===============
+1. Pascal one 
+Given numRows, generate the first numRows of Pascal's triangle. 
+
+Some facts: 
+> row i (i starts from 0), has (i+1) length of element. 
+> row[i][j] = row[i-1][j-1] + row[i-1][j], except when j=0 and j=i;
+
+2. Pascal row 
+Given an index k, return the kth row of the Pascal's triangle 
+use only O(k) extra space 
+[ start from the BACK!!! IMPORTANT ]
+
+Merge Sort
+==========
+1. Given two sorted integer arrays num1 and num2, merge num2 into num1 as one sorted array.
+> start from the back, since you can see the value will not be affected in this way. 
+[ start from the BACK!!! IMPORTANT ]
+
+Plus One
+========
+1. Given a non-negative number represented as an array of digits, plus one to the number. 
+Most significant digit is at the head of the list 
+
+the logic of the problem is important, organize your code. 
+
+Remove Element
+============== 
+1. Given an array and a value, remove all instances of that value in place, return the new length; 
+Order of element can be changed 
+
+2. Remove Duplicates from Sorted Array
+Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length
+Do it in place 
+
+Sum Problem
+===========
+1. Given an array of integers, return indices of the two numbers such that they add up to specific target. 
+Assume each input would have exactly one solution 
+
+> use hashmap, since it require to return the original index value 
+> check the sum counterpart 
+
+
+
+
+
+
+
+
+
 
