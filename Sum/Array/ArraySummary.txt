@@ -86,6 +86,22 @@ Assume each input would have exactly one solution
 > use hashmap, since it require to return the original index value 
 > check the sum counterpart 
 
+08/30/2016
+2d array updating via neighbours
+================================
+1. Game of Life
+Board with m by n cells, updating the cells accroding to its 8 neighbours, in-place, updating at the same time 
+
+> update row by row, 
+> record the status of CHANGE, 
+from live to live 1, from death to death 0, from live to death -1, from death to live 2; 
+[Status Recording Method, Be careful for the conditional status]. 
+
+> short-circuit mistake: http://stackoverflow.com/questions/2100758/javascript-or-variable-assignment-explanation
+
+
+
+
 
 
 
