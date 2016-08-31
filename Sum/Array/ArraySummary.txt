@@ -99,6 +99,30 @@ from live to live 1, from death to death 0, from live to death -1, from death to
 
 > short-circuit mistake: http://stackoverflow.com/questions/2100758/javascript-or-variable-assignment-explanation
 
+08/31/2016
+Wiggle Sort
+============
+1. Wiggle Sort I: Given an unsorted array nums, reorder it in-place such that 
+nums[0] <= nums[1] >= nums[2] <= nums[3] ....
+complete the problem in-place
+
+/*
+ 	two conditions: 
+ 	1) if the index is odd, nums[i] >= nums[i-1]
+ 	2) if the index is even, nums[i] <= nums[i-1]
+ 	so we reorder the array to satify these condition 
+ */
+
+ Missing Number
+ ==============
+ 1. Missing Number: 
+ Given an array containing n DISTINCT numbers taken from 0,1,2,3,4,5,...,n, find the one that is missing from the array 
+
+ run in linear runtime 
+
+
+
+
 
 
 
