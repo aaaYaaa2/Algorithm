@@ -30,6 +30,10 @@ Assume that the non-empty and the majority element always exist in the array
 > sort and peak the middle item 
 > Moore voting algorithm: 
 
+2. Majority Element II
+Given an integer array of size n, find all elements that appear more than [n/3] times. The algorithm should run in linear time and in O(1) space 
+
+
 Dynamic Difference Problem 
 ===========================
 1. Best Time to Buy and Sell Stock
@@ -119,6 +123,18 @@ complete the problem in-place
  Given an array containing n DISTINCT numbers taken from 0,1,2,3,4,5,...,n, find the one that is missing from the array 
 
  run in linear runtime 
+
+ 09/01/2016
+ Product of Array Except Self
+ ============================
+ Given an array of n integers where n>1, nums, return an array output such that output[i] is equal to the product of all the elements
+ of nums except nums[i]. Solve it without division and in O(n). Use constant space, output array does not count in space analysis. 
+
+ > create the result array 
+ > iterate twice, first from the start and second from the end, compute the product so far and multiply them together 
+
+ 
+
 
 
 
