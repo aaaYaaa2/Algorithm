@@ -33,6 +33,9 @@ Assume that the non-empty and the majority element always exist in the array
 2. Majority Element II
 Given an integer array of size n, find all elements that appear more than [n/3] times. The algorithm should run in linear time and in O(1) space 
 
+for general solution : 
+http://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/
+
 
 Dynamic Difference Problem 
 ===========================
@@ -132,6 +135,34 @@ complete the problem in-place
 
  > create the result array 
  > iterate twice, first from the start and second from the end, compute the product so far and multiply them together 
+
+ 09/02/2016
+ Summary Ranges
+ ==============
+ Given a sorted integer array without duplicates, return the summary of its ranges
+ For instance, [0,1,2,4,5,7], return ["0"->"2", "4->5", "7"];
+
+ Minimum Size Subarray Sum
+ ==========================
+ Given an array of n positive integers and a positive integer s, find the mininal length of a subarray of which the sum>=s. If there isn't one, return 0 instead. 
+
+ method1> keep a window and slide the window through the array 
+ methid2> binary search 
+
+
+09/04/2016
+Find Peak Element 
+=================
+A peak element is an element that is greater than its neighbors, Given an input array where num[i]!=num[i+1], find a peak element and return
+its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is fine. 
+Assume num[-1] = num[++] = minus infinity 
+
+
+
+
+
+
+
 
  
 
