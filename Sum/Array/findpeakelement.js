@@ -7,8 +7,8 @@
 	method1: create a post-prev array, then check the plus and minus sign of each element's neigbour 
 */
 var findPeakElement1 = function(nums) {
-	if(nums.length===1) return nums[0];
-	if(nums.length===2) return nums[0] > nums[1]? nums[0] : nums[1];
+	if(nums.length===1) return 0;
+	if(nums.length===2) return nums[0] > nums[1]? 0 : 1;
 
 	// create the minus array 
 	var minus = [];
@@ -20,10 +20,10 @@ var findPeakElement1 = function(nums) {
 	// search for our target result;
 	if(minus[1]<0) return nums[0];
 	for(i=1; i<nums.length-1; i++){
-		if(minus[i]>0 && minus[i+1]<0) return nums[i]; 
+		if(minus[i]>0 && minus[i+1]<0) return i; 
 	}
-	if(minus[nums.length-1]>0) return nums[nums.length-1];
-};
+	if(minus[nums.length-1]>0) return nums.length-1;
+}; // Time Complexity O(N) N is the length of nums 
 
 //  var input = [1,2,3];
 //  console.log(findPeakElement1(input));
@@ -32,8 +32,8 @@ var findPeakElement1 = function(nums) {
 	method 2: use binary search in finding the element 
 */
 var findPeakElement2 = function(nums) {
-	if(nums.length===1) return nums[0];
-	if(nums.length===2) return nums[0] > nums[1]? nums[0] : nums[1];
+	if(nums.length===1) return 0;
+	if(nums.length===2) return nums[0] > nums[1]? 0 : 1;
 
 	// create the minus array 
 	var minus = [];
@@ -44,7 +44,7 @@ var findPeakElement2 = function(nums) {
 
 	// use binary saerch 
 	return binarySearch(0, minus.length-1, minus);
-};
+}; // 86ms
 
 function binarySearch(curIdx, high, arr) {
 	while(curIdx<=high){
@@ -60,3 +60,6 @@ function binarySearch(curIdx, high, arr) {
 	}
 	return high;
 }
+
+var input2 = [];
+console.log(findPeakElement2(input2));

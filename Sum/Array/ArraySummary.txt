@@ -157,6 +157,28 @@ A peak element is an element that is greater than its neighbors, Given an input 
 its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is fine. 
 Assume num[-1] = num[++] = minus infinity 
 
+> rearrange the array into [the later element - previous element], 
+> method1: check the minus array if current element positive and later element negative, find the target, 
+> method2: use binary search to find the target 
+
+
+Find Minimum in Rotated Sorted Array
+====================================
+A sorted array is rotated at some pivot unknown, (i.e [0,1,2,3,4,5,6,7] ---> [4,5,6,7,0,1,2]), 
+Find the minimum element, assume no duplicate exists in the array. 
+
+> search directly
+> binary search, be careful the checking case 
+
+
+09/05
+=====
+/\/\/\/\/\/\/\/\/\/\/\/\/\
+Maixmum Product Subarray 
+------------------------
+Find the contiguous subarray within an array (containing at least one number) which has the largest product (the array may contain negative number )
+
+> Dynamic Programming: 
 
 
 
