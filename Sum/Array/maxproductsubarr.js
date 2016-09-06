@@ -8,7 +8,7 @@
 	> For each number, we can either added to the current product, or start a brand new product from itself 
 	> since there are negative and positive solution, we need to record not only max so far, but also min so far 
 */
-var maxProduct = function(nums) {
+var maxProduct1 = function(nums) {
 	var res = nums[0], min = nums[0], max = nums[0];
 	for(var i=0; i<nums.length; i++){
 		var temp = min;

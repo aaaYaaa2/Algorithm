@@ -179,6 +179,16 @@ Maixmum Product Subarray
 Find the contiguous subarray within an array (containing at least one number) which has the largest product (the array may contain negative number )
 
 > Dynamic Programming: 
+> keep a positive minimum and negative minimum and a global product 
+
+Best Time to Buy and Sell Stock II 
+----------------------------------
+Say you have an array for which the ith element is the price of a given stock on day i, 
+
+/\/\/\/\
+Triangle
+--------
+
 
 
 
