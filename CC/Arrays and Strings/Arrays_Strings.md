@@ -35,4 +35,12 @@ Week of 09/02 to 09/06
 ### Dynamic Programming dealing with Product that can be both Positve and Negative 
 1. [Maximum Product Subarray](../../Sum/Array/maxproductsubarr.js)
 
+### Dynamic Programming start from bottom up
+1. [Triangle](../../Sum/Array/triangle.js)
+
+### Greedy method 
+1. [Best Time to Buy and Sell Stock II](../../Sum/Array/besttimebutsellstock2.js)
+
+
+
 
