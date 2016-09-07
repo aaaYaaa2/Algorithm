@@ -41,6 +41,15 @@ Week of 09/02 to 09/06
 ### Greedy method 
 1. [Best Time to Buy and Sell Stock II](../../Sum/Array/besttimebutsellstock2.js)
 
+### [Remove Duplicates from Sorted Array II](../../Sum/Array/removedupsorted2.js)
+*check every two items*
+
+### [Word Search](../../Sum/Array/wordsearch.js)
+*explore*
+
+### [Sort Colors](../../Sum/Array/sortcolors.js)
+*use swap(more implementation needed)*
+
 
 
 
