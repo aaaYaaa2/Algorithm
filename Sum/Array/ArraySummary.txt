@@ -189,6 +189,25 @@ Say you have an array for which the ith element is the price of a given stock on
 Triangle
 --------
 
+09/06
+=====
+/\/\/\/\/\/\/\/\/\/\
+Remove Duplicates from Sorted Array II
+---------------------------------------
+Check every two elements, two elements as a group 
+
+/\/\/\/\/\/\
+Word Search 
+-----------
+
+/\/\/\/\/\/\
+Sort Colors
+-----------
+
+
+
+
+
 
 
 
