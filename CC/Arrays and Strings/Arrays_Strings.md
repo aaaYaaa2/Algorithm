@@ -1,8 +1,6 @@
 Arrays and Strings
 ==================
 
-Week of 08/31 to 09/01
-----------------------
 [Wiggle Sort I](../../Sum/Array/wigglesortone.js)
 
 1. if index is odd, ``nums[i]>=nums[i-1]``
@@ -23,32 +21,75 @@ Usually used in cases where updating the previous element affect the result of l
 2. [Merge Two Sorted Arrays](../../Sum/Array/mergesortedarray.js)
 3. [Replace whitespace with %20](replacespacewith%20.js)
 
-
-Week of 09/02 to 09/06
 ----------------------
-### Binary Search
+## **Binary Search**
 1. [Find Minimum Rotate Array](../../Sum/Array/findminrotatearr.js)
 2. [Find Peak Element](../../Sum/Array/findpeakelement.js)
 3. [Minimum Size Subarray Sum](../../Sum/Array/minimumsizesubarraysum.js)
+4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix,js)
+  
+  1) map index of 2d matrix to a 1d array, in order to perform binary search
+  
+  2) there are drawbacks of the methods: index may overflow while we mapping it
+5. [Search Insert Position](../../Sum/Array/searchinsertpos.js): *binary search used for insertion*
 
 ---
-### Dynamic Programming dealing with Product that can be both Positve and Negative 
-1. [Maximum Product Subarray](../../Sum/Array/maxproductsubarr.js)
+## **Dynamic Programming**
 
-### Dynamic Programming start from bottom up
+### **Dynamic Programming dealing with Product that can be both Positve and Negative** 
+1. [Maximum Product Subarray](../../Sum/Array/maxproductsubarr.js)
+2. [Maximum Subarray](../../Sum/Array/maximumsubarray.js): *if negative, start from 0 again*
+
+### **Dynamic Programming start from bottom up**
 1. [Triangle](../../Sum/Array/triangle.js)
 
-### Greedy method 
+### **Dynamic Programming dealing with matrix path sum**
+1. [Minimum Path Sum](../../Sum/Array/minimumpathsum.js)
+
+### **Dynamic Programming for traverse matrix with obstacle**
+1. [Unique Path II](../../Sum/Array/uniquepath2.js)
+  
+set the obstacle place to zero 
+
+---
+## **Greedy method** 
 1. [Best Time to Buy and Sell Stock II](../../Sum/Array/besttimebutsellstock2.js)
 
+---
+## **Maximum place that can be reached** 
+1. [Jump Game](../../Sum/Array/jumpgame.js)
+2. Buying and Selling Stock Problem 
+
+---
+## **Permuting Elements**
+1. [element permuting I](../../Sum/Array/permelements.js): *a general way to permute elements*
+2. [element permuting II](../../Sum/Array/permuelement2.js): *permute elements with specific requirements* 
+
+### General Step: 
+1. Find way to map oldIdx to newIdx in new array 
+2. Iterate through old array, put the correct number on each place
+3. Mark the place in some way, as we traverse 
+
+---
 ### [Remove Duplicates from Sorted Array II](../../Sum/Array/removedupsorted2.js)
-*check every two items*
 
-### [Word Search](../../Sum/Array/wordsearch.js)
-*explore*
+  *check every two items*
 
-### [Sort Colors](../../Sum/Array/sortcolors.js)
-*use swap(more implementation needed)*
+### [Word Search](../../Sum/Array/wordsearch.js) 
+
+  *explore*
+
+### [Sort Colors](../../Sum/Array/sortcolors.js) 
+
+  *use swap(more implementation needed)*
+
+### [Spiral Matrix I](../../Sum/Array/spiralmatrix.js) and [Spiral Matrix II](../../Sum/Array/spiralmatrix2.js) 
+
+  *keep four index to track the boundary*
+
+
+
+
 
 
 
