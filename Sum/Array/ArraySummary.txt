@@ -204,6 +204,61 @@ Word Search
 Sort Colors
 -----------
 
+09/07
+=====
+/\/\/\/\/\/\/\/\/\
+Search a 2D Matrix
+------------------
+
+Set Matrix Zeroes
+-----------------
+
+/\/\/\/\/\/\/\/\/\ Dynamic Programming 
+Minimum Path Sum
+----------------
+
+/\/\/\/\/\/\/\/\/\/\ Dynamic Programmin 
+Unique PathI && Unique PathII 
+-----------------------------
+
+
+/\/\/\/\/\/\/\/ 
+Spiral Matrix I
+---------------
+
+
+09/08
+/\/\/\/\/
+Jump Game
+========= 
+
+/\/\/\/\/\/\/\/\
+Maximum Subarray 
+================ Dynamic programming 
+
+
+/\/\/\/\/\/\/\/\/\/\/\
+Search Insert Position
+====================== Binary Search: be careful the high index case 
+
+09/10
+
+Summary of Permute the elements of an array 
+
+permelement.js
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
