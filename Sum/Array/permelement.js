@@ -24,9 +24,9 @@ var permelement = function(perm, a) {
 			// preserve the element that will be switched later 
 			var tmp = map[perm[next]]; 
 			swap(next, map[perm[next]], a);
-			console.log('a:' + a);
+			// console.log('a:' + a);
 			perm[next] = perm[next]-6;
-			console.log('perm: ' + perm);
+			// console.log('perm: ' + perm);
 			next = tmp;
 			console.log('tmp: ' + tmp);
 		}

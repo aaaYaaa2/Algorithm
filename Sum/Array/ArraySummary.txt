@@ -248,6 +248,58 @@ Summary of Permute the elements of an array
 permelement.js
 
 
+09/12
+/\/\/\/\/\/\/\/\/\
+Search for a Range
+==================
+searchforrange.js
+
+for nums[mid]===target condition, be careful about the index 
+
+/\/\
+4Sum
+====
+4sum.js
+
+sort the array,
+keep record, 
+***
+copy by value in javascript 
+
+some insights in the time complexity: https://discuss.leetcode.com/topic/27445/lower-bound-ω-n-3
+
+both recursive and iterative solution 
+
+/\/\/\/\/\/\/\/\
+Next Permutation
+================
+
+09/13
+/\/\/\/\/\/\
+3Sum Closet
+===========
+keep a fixed element, and then keep two pointers to move around, similar to the method of 4Sum 
+
+/\/\
+3Sum 
+====
+
+/\/\/\/\/\/\/\/\/\/\/\/\/
+Container With Most Water
+=========================
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
