@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 Math
 ====
 
@@ -85,4 +83,3 @@ from previous numbers, since the minimum number can only have square sums that i
 
 1. method 1, we could use the same method for compute next permutation and do it for k times
 2. method 2, we can calculate the places 
->>>>>>> 45d4c6e70b884341fab3279cc02d231e6e85f4e8
