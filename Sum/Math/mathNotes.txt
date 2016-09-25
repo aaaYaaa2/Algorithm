@@ -1,0 +1,76 @@
+Factorial Trailing Zeroes
+=========================
+The trailing zeroes depends on the number of 10s in the decomposition of the number. However, 10 depends on 2 and 5, and depends on the 2 and 5 which has less number, the decomposition of 5 is abviously less than 5. To avoid repeatition counting, 
+
+Palindrome Number
+=================
+reverse the number, 
+
+
+**Add digits
+============
+we know:
+1%9 = 1;
+10%9 = 1;
+100%9 = 1;
+... more the same 
+
+(an*10^n + a(n-1)*10^(n-1) + ... + a2*100 + a1*10 + a0)%9 = (an + a(n-1) + a(n-2) + ... + a2 + a1 + a0);
+
+Reverse Integer
+===============
+be careful for the overflow cases 
+
+Power of Two
+============
+
+Divide Two Integers
+===================
+some common trick, consider the overflow cases, consider algorithm double up or bottom down of the two integers, especially the divisor. consider the negative and positive cases 
+
+** Multiply Strings
+===================
+mapping of index(remind me of the 2d Matrix binary search), find the partern in the location of different product digits,
+
+** Power(x,n)
+=============
+common corner case for power problem: 
+negative base, negative power, 0 case, overflow, underflow
+
+** Permutation Sequence 
+=======================
+// first method is similar to next permutation problem, except this is from the start 
+// it will run O(N), linear 
+
+// second method is to get the position of the target permutation first, since for given number at position m, there will be (n-m)! permutation behind it , in this way we can calculate the position of the number 
+
+** Square Root
+===========
+binary search, two binary search, compare and new thoughts
+
+** Integer Break
+================
+dynamic programming 
+
+** Bulb Switcher
+================
+the final status of the bulb depends on the number of divisors, all of them will be even, since number = a*b, except that 
+when there is a power, then it will be odd. So just count the number of square number here. 
+
+** Ugly Number II
+=================
+k[0] = min(2, 3, 5);
+k[1] = min(k[0]*2, k[0]*3, k[0]*5);
+move the pointer of 2 to next one 
+k[2] = min(k[1]*2, k[0]*3, k[0]*5);
+......
+
+** Perfect Squares
+===================
+dynamic programming, for each number, find the mimimun number of sum. 
+
+from previous numbers, since the minimum number can only have square sums that is less than itself 
+
+n = some perfectsquare(1) + dp[n-somefectsquare]
+
+ 
