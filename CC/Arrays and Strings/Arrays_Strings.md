@@ -99,6 +99,51 @@ set the obstacle place to zero
 
 *Observe how analytics*
 
+### [ZigZag Conversion](../../Sum/String/zigzagconverstion.js)
+
+*identify loops*
+
+### [Longest Common Prefix](../../Sum/String/longestcommonprefix.js)
+
+*don't forget to take the smaller one between prefix and current string that been compared *
+
+### [Compare Version Numbers](../../Sum/String/compareversion.js)
+
+### [Valid Palindrome](../../Sum/String/validpalindrome.js)
+
+*use regular expression to match multiple white space*
+
+### Count and Say
+
+*there are only 1, 2 and 3 numbers that are possible*
+
+### Reverse a Word in String
+
+*when reverse number, need to consider the leading and trailing zeroes*
+
+### [Letter Combination of a Phone Number](../../Sum/String/lettercombinationofphonenumber.js)
+
+*from data structure perspective to reduce time complexity*
+
+### [Basic Calculator](../../Sum/String/basiccalculator.js)
+
+*transform negative value to positive value,*
+
+### [Restore IP Address](../../Sum/String/restoreipaddress.js)
+
+*be careful about the valid number, prefix 0 is not a valid number *
+
+### [Generate Parenthese](../../Sum/String/generateparenthese.js)
+
+*detect boundary case / dynamic programming*
+
+![picture](../../PIC/IMG_7544.JPG)
+
+### Longest Palindromic Substring
+
+*when a string is a Palindrome, it will be have a symmetric structure, so you can start from the center, understand the meaning of longest*
+
+
 
 
 
