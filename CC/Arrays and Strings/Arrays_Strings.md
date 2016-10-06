@@ -26,7 +26,7 @@ Usually used in cases where updating the previous element affect the result of l
 1. [Find Minimum Rotate Array](../../Sum/Array/findminrotatearr.js)
 2. [Find Peak Element](../../Sum/Array/findpeakelement.js)
 3. [Minimum Size Subarray Sum](../../Sum/Array/minimumsizesubarraysum.js)
-4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix,js)
+4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix.js)
 5. [Search for a Range](../../Sum/Array/searchforrange.js): *binary saerch with two pointers, for nums[mid]===target condition, be careful about the index*
   
   1) map index of 2d matrix to a 1d array, in order to perform binary search
