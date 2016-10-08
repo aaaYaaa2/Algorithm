@@ -38,6 +38,8 @@ Usually used in cases where updating the previous element affect the result of l
   2) there are drawbacks of the methods: index may overflow while we mapping it
 5. [Search Insert Position](../../Sum/Array/searchinsertpos.js): *binary search used for insertion*
 
+We could move low position, there is no specific need to determine the position as to check mid+1 when mid is smaller than target, we can check the number at last. 
+
 ---
 ## **Dynamic Programming**
 
