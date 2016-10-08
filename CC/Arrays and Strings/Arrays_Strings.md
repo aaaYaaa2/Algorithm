@@ -26,6 +26,8 @@ Usually used in cases where updating the previous element affect the result of l
 1. [Find Minimum Rotate Array](../../Sum/Array/findminrotatearr.js)
 2. [Find Peak Element](../../Sum/Array/findpeakelement.js)
 3. [Minimum Size Subarray Sum](../../Sum/Array/minimumsizesubarraysum.js)
+   Method 1 could be using a slide window (you can use two pointer to keep the index), the time complexity could be O(N)
+   Method 2 is to compute the pre-sum of the array first then use binary search to find the target. Although this one is time    O(NlgN)
 4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix.js)
 5. [Search for a Range](../../Sum/Array/searchforrange.js): *binary saerch with two pointers, for nums[mid]===target condition, be careful about the index*
   
