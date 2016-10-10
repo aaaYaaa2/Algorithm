@@ -22,6 +22,9 @@ Usually used in cases where updating the previous element affect the result of l
    for example: 1 2 1 --> 1 3 3 1, when we update from front, for 3 at index 1, we update to 3 but still needs the original 2
    
 2. [Merge Two Sorted Arrays](../../Sum/Array/mergesortedarray.js)
+
+   if starting from the front, it will have insert moving problem later
+   
 3. [Replace whitespace with %20](replacespacewith%20.js)
 
 ----------------------
