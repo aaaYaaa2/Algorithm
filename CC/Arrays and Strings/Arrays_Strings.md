@@ -25,8 +25,10 @@ Usually used in cases where updating the previous element affect the result of l
 
    if starting from the front, it will have insert moving problem later
    
-3. [Replace whitespace with %20](replacespacewith%20.js)
-
+3. [Replace whitespace with %20](./replacespaceswith%20.js)
+   
+   it is the same with space problem 
+   
 ----------------------
 ## **Binary Search**
 1. [Find Minimum Rotate Array](../../Sum/Array/findminrotatearr.js)
