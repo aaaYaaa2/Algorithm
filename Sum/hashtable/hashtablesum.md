@@ -26,7 +26,7 @@
 
 ---
 ## [Bucket Sort](https://en.wikipedia.org/wiki/Bucket_sort)
-### [Top K Frequent Element](./topfreq.js)
+### [Top K Frequent Element](./topkfreq.js)
 
 *build the bucket process*
 
