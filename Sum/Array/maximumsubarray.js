@@ -33,3 +33,21 @@ var maxSubarray1 = function(nums){
 };
 
 console.log(maxSubarray1(input));
+
+var input1 = [-2,1,-3,4,-1,2,1,-5,4];
+// another way to take care of negative value
+// no need for extra space like dp 
+var maxSubarray2 = function(nums){
+	var max = Number.MIN_SAFE_INTEGER, sum=0;
+	for(var i=0; i<nums.length; i++){
+		if(sum<0){
+			sum = nums[i];
+		}else{
+			sum+=nums[i];
+		}
+		max = Math.max(max, sum);
+	}
+	return max;
+};
+
+console.log(maxSubarray2(input1));

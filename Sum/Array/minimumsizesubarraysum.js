@@ -14,6 +14,7 @@ var minimumSizeSubarraySum1 = function(s, nums){
 			min = Math.min(min, j-i+1);
 		}
 	}
+   // check if the minimum existx
 	return min === Number.MAX_SAFE_INTEGER? 0: min;
 }; // Time Complexity is O(N)
 

@@ -1,0 +1,14 @@
+/\/\/\/\/
+Sort List
+=========
+
+use merge sort, the time complexity is O(NlgN) 
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+Remove Duplicates from Sorted List
+==================================
+
+1. prev.next = cur means we did not find any duplicates for this element, so we can safely move the prev to next element 
+2. since it did not say it is sorted in ascending or descending order, so we need to specify !== do not use < or > in case you do not know the order 
+
