@@ -15,9 +15,12 @@ the general Voting Algorithm ....
 ---
 **Starting from the Back**
 
-Usually used in cases where updating the previous element affect the result of later element, or when the pslaec is limited 
+Usually used in cases where updating the previous element affect the result of later element, or when the place is limited 
 
 1. [Pascal Triangle 2](../../Sum/Array/pascaltriangle2.js)
+
+   for example: 1 2 1 --> 1 3 3 1, when we update from front, for 3 at index 1, we update to 3 but still needs the original 2
+   
 2. [Merge Two Sorted Arrays](../../Sum/Array/mergesortedarray.js)
 3. [Replace whitespace with %20](replacespacewith%20.js)
 
