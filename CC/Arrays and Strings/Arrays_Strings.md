@@ -56,6 +56,9 @@ We could move low position, there is no specific need to determine the position 
 
 ### **Dynamic Programming dealing with Product that can be both Positve and Negative** 
 1. [Maximum Product Subarray](../../Sum/Array/maxproductsubarr.js)
+
+   For each number, we can either added to the current product, or start a brand new product from itself 
+	since there are negative and positive solution, we need to record not only max so far, but also min so far 
 2. [Maximum Subarray](../../Sum/Array/maximumsubarray.js): *if negative, start from 0 again*
 
 ### **Dynamic Programming start from bottom up**
