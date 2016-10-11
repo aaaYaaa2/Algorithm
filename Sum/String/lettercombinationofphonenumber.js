@@ -3,7 +3,7 @@
 	@return {string[]} 
 */
 
-var letterCombinations = function(digits){
+var letterCombinations1 = function(digits){
 	var queue = [], 
 		map = {
 				'0': ' ',
@@ -37,4 +37,31 @@ var letterCombinations = function(digits){
 };
 
 var input = '123';
-console.log(letterCombinations(input));
+console.log(letterCombinations1(input));
+
+
+/**
+ * @param {string} digits
+ * @return {string[]}
+ */
+ // recursive solution 
+var letterCombinations2 = function(digits) {
+    var mapping = ['', '*', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz'];
+    var res = [];
+    if(digits===undefined || digits.length===0) return res;
+    combinationHelper('', res, 0, mapping, digits);
+    return res;
+};
+
+function combinationHelper(curStr, finalRes, curPlc, mapping, digits){
+    if(curPlc===digits.length){
+        // curPlc represent the current character so we need to use digits.length, not digits.length-1 
+        finalRes.push(curStr);
+        return;
+    }
+    var charPool = mapping[parseInt(digits.charAt(curPlc), 10)];
+    // the for loop target on each position of a possible result 
+    for(var i=0; i<charPool.length; i++){
+        combinationHelper(curStr+charPool.charAt(i), finalRes, curPlc+1, mapping, digits);
+    }
+}
