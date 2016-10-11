@@ -39,6 +39,9 @@ Usually used in cases where updating the previous element affect the result of l
    
    Method 2 is to compute the pre-sum of the array first then use binary search to find the target. Although this one is time    O(NlgN)
 4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix.js)
+
+   mapping from 2D matrix to 1D array, index mapping 
+   
 5. [Search for a Range](../../Sum/Array/searchforrange.js): *binary saerch with two pointers, for nums[mid]===target condition, be careful about the index*
   
   1) map index of 2d matrix to a 1d array, in order to perform binary search
