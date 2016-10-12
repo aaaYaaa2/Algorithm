@@ -39,6 +39,9 @@ Usually used in cases where updating the previous element affect the result of l
    
    Method 2 is to compute the pre-sum of the array first then use binary search to find the target. Although this one is time    O(NlgN)
 4. [Search a 2D Matrix](../../Sum/Array/search2dmatrix.js)
+
+   mapping from 2D matrix to 1D array, index mapping 
+   
 5. [Search for a Range](../../Sum/Array/searchforrange.js): *binary saerch with two pointers, for nums[mid]===target condition, be careful about the index*
   
   1) map index of 2d matrix to a 1d array, in order to perform binary search
@@ -46,13 +49,16 @@ Usually used in cases where updating the previous element affect the result of l
   2) there are drawbacks of the methods: index may overflow while we mapping it
 5. [Search Insert Position](../../Sum/Array/searchinsertpos.js): *binary search used for insertion*
 
-We could move low position, there is no specific need to determine the position as to check mid+1 when mid is smaller than target, we can check the number at last. 
+We could move low position, there is no specific need to determine the position as to check mid+1 when mid is smaller than target, **we can check the number at last**. 
 
 ---
 ## **Dynamic Programming**
 
 ### **Dynamic Programming dealing with Product that can be both Positve and Negative** 
 1. [Maximum Product Subarray](../../Sum/Array/maxproductsubarr.js)
+
+   For each number, we can either added to the current product, or start a brand new product from itself 
+	since there are negative and positive solution, we need to record not only max so far, but also min so far 
 2. [Maximum Subarray](../../Sum/Array/maximumsubarray.js): *if negative, start from 0 again*
 
 ### **Dynamic Programming start from bottom up**

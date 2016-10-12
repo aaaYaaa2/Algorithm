@@ -45,6 +45,8 @@
 #### [Invert Binary Tree](./invertbinarytree.js)
 
   *iterative approach, invert from top, then we have children that are 'automatically' invert*
+  
+  keep invert nodes, no need to track size(level)
     
 #### [Binary Tree Path](./binarytreepaths.js)
 
