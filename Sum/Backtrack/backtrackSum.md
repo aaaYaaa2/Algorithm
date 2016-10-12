@@ -57,5 +57,9 @@
 ## NQueen
 
 1. [NQueen](./JS/nqueen.js)
-
+   
+   for backtrack, we need a way to represent the candidates, a way to generate possible solution, a way to valid and unvalid all solution. 
+   
+   it is just like combination and subset problem, the difference is just we need to find the condition and candidates by ourselves
+   
    current I have the method for non-bit manipulation solution, but quite slow.... 
