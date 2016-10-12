@@ -35,6 +35,11 @@ function comKSum(k, input){
 	Combination Sum Backtrack Helper
 */
 // recursive appraoch 
+/*
+	given elements number k, 
+	candidates without duplicate 
+	find possible sum result 
+*/
 function comKSumHelper(k, input, subres, res, pos){
 	if(k===0){
 		// already include 0 case here 
