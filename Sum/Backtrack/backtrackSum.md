@@ -63,3 +63,5 @@
    it is just like combination and subset problem, the difference is just we need to find the condition and candidates by ourselves
    
    current I have the method for non-bit manipulation solution, but quite slow.... 
+   
+   `arr.join('')`
