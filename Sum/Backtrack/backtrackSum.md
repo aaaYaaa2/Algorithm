@@ -70,7 +70,7 @@
 
 ## Permutation 
 
-1. Permutation I
+1. [Permutation I](./JS/permutations1.js)
 	Given a collection of distinct numbers, return all possible permutations. 
 	
 	For EVERY POSITION in permutation result, you can put any number that has not appeared in the current result before this index 
