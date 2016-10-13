@@ -65,3 +65,14 @@
    current I have the method for non-bit manipulation solution, but quite slow.... 
    
    `arr.join('')`
+   
+---
+
+## Permutation 
+
+1. Permutation I
+	Given a collection of distinct numbers, return all possible permutations. 
+	
+	For EVERY POSITION in permutation result, you can put any number that has not appeared in the current result before this index 
+	
+	`Array.fill(flag, false);`
