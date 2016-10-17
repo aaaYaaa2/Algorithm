@@ -52,7 +52,7 @@ Write an algorithm to find the "next" node (i.e inorder successor) of a given no
 1. if(p.val > root.val) then we go to the right child of root element,
 2. if(p.val < root.val) then we store the current root, since we do not know if the right subtree of current root's left child is has elements larger than p.val, then it will repeat the process 
 
-### [4.7 Build Order]
+### 4.7 Build Order
 
 You are given a list of projects and a list of dependencies. All of a project's dependencies must be built before the project is. Find a build order that will allow the projects to be built. If there is no valid build order, return an error. 
 
@@ -64,7 +64,7 @@ Recursive, when we encounter a node, we know all the CHILDREN that follow this n
 
 [Javascript Implementation](buildorder.js)
 
-** method 1: BFS **
+**method 1: BFS**
 
 ```
 1. store all parents of a node in a hashmap, `key` is a neighbor of current node, `value` is the count of a parent  
@@ -88,7 +88,7 @@ Recursive, when we encounter a node, we know all the CHILDREN that follow this n
 #### [Javascript `Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
 
-** method 2: DFS **
+**method 2: DFS**
 
 Keep going deep when we encounter a qualified candidate. 
 
