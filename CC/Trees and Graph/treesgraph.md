@@ -6,6 +6,8 @@
 2. Height of a node: number of edges on the longest path from the node to a leaf 
 3. Dense Graph: a graph in which the number of edges is close to the maximal number of edges. 
 4. Sparse Graph: the opposite 
+5. indegree and outdegree, for every vertex, if `indegree == outdegree` then it is called `balanced directed graph` 
+
 
 ### [4.1 Route Between Nodes](RouteBetweenNodes.java)
 
@@ -49,6 +51,54 @@ Write an algorithm to find the "next" node (i.e inorder successor) of a given no
 
 1. if(p.val > root.val) then we go to the right child of root element,
 2. if(p.val < root.val) then we store the current root, since we do not know if the right subtree of current root's left child is has elements larger than p.val, then it will repeat the process 
+
+### [4.7 Build Order]
+
+You are given a list of projects and a list of dependencies. All of a project's dependencies must be built before the project is. Find a build order that will allow the projects to be built. If there is no valid build order, return an error. 
+
+**This is a problem of Topological Sort**: linearly ordering the vertices in a graph such that for every edge(a, b), a appears before b in the linear order
+
+Recursive, when we encounter a node, we know all the CHILDREN that follow this node 
+
+[Java Implementation](BuildOrder.java)
+
+[Javascript Implementation](buildorder.js)
+
+** method 1: BFS **
+
+```
+1. store all parents of a node in a hashmap, `key` is a neighbor of current node, `value` is the count of a parent  
+2. find nodes with no parents, put them into a queue, these nodes are our start position 
+3. repeat this until the queue is empty: 
+	poll a node from queue
+	
+	reduce parents count of all current node's neighbors, since we visited the current node, the dependencies will be reducing 
+
+	if we find one nodes parents count equal to zero, then offer this node to queue, since it could be a possible start point on next stage 
+
+```
+
+**Note**:
+	1. the queue stores the possible start point later, and a `start point` means it has no parents requirement 
+	2. According to one, we need the hashmap to keep record of all the parents number of all nodes. 
+	3. we only add an element to result if it is a `start point`
+	4. This problem is assuming that we always can have a possible order solution 
+	5. do not forget to add **ALL** `start point` to queue, since those nodes are all able to visit at this position (i.e we have their requirements satisfied!)
+
+#### [Javascript `Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+
+** method 2: DFS **
+
+Keep going deep when we encounter a qualified candidate. 
+
+**Complexity**: for both method, time complexity is O(V+E) and Space Complexity is O(V) 
+
+
+
+
+
+
 
 
 
