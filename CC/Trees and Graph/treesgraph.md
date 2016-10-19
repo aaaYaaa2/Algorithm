@@ -95,6 +95,22 @@ Keep going deep when we encounter a qualified candidate.
 **Complexity**: for both method, time complexity is O(V+E) and Space Complexity is O(V) 
 
 
+### 4.8 First Common Ancestor
+
+Design an algorithm and write code to find the first common ancestor of two nodes in a binary tree. Avoid storing additional nodes in a data structure. 
+
+**NOTE**: This is not necessarily a binary search tree
+
+**Scenario 1**: We do not have pointer to parent in `TreeNode` 
+    1. method 1, count node number in left and right subtree 
+    2. method 2, only return node when when found a target or null, time complexity is O(N)
+    3. method 3, keep a parent dictionary, similar to TreeNode with a parent pointer, time Complexity is O(d), d is the deeper nodes depth, since there is no parent pointer, we have extra space. 
+
+**Scenario 2**: `TreeNode` has parent pointer, similar with method 3 
+
+
+
+
 
 
 
