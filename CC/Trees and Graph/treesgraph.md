@@ -104,11 +104,32 @@ Design an algorithm and write code to find the first common ancestor of two node
 **NOTE**: This is not necessarily a binary search tree
 
 **Scenario 1**: We do not have pointer to parent in `TreeNode` 
-    1. method 1, count node number in left and right subtree 
+
+    1. method 1, count node number in left and right subtree
+     
     2. method 2, only return node when when found a target or null, time complexity is O(N)
+
     3. method 3, keep a parent dictionary, similar to TreeNode with a parent pointer, time Complexity is O(d), d is the deeper nodes depth, since there is no parent pointer, we have extra space. 
 
 **Scenario 2**: `TreeNode` has parent pointer, similar with method 3 
+
+
+### 4.9 BST Sequence 
+
+A binary search tree was created by traversing through an array from left to right and inserting each element. Given a binary search tree with distinct elements, print all possible arrays that could have led to this tree. 
+
+**Some Thoughts**:
+The very first value of the array must be the root value, but relative value of left and right item is not important 
+ 
+So we can weave the array together and keep the relative value of some of its value 
+
+### 4.10 Check Subtree 
+
+T1 and T2 are two very large binary trees, with T1 much bigger than T2. Create an algorithm to determine if T2 is a subtree of T2. 
+
+#### method 1: could perform level order traversal to compare node of T1 to root of T2, worst case will have to go O(N), N is the number of nodes in T1
+
+#### method 2: could first compute the height of T2, then go to check node that have height equal to that of T2  
 
 
 
