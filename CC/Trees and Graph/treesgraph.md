@@ -114,7 +114,7 @@ Design an algorithm and write code to find the first common ancestor of two node
 **Scenario 2**: `TreeNode` has parent pointer, similar with method 3 
 
 
-### 4.9 BST Sequence 
+### 4.9 BST Sequence[./BSTSequence.java] 
 
 A binary search tree was created by traversing through an array from left to right and inserting each element. Given a binary search tree with distinct elements, print all possible arrays that could have led to this tree. 
 
@@ -123,13 +123,26 @@ The very first value of the array must be the root value, but relative value of 
  
 So we can weave the array together and keep the relative value of some of its value 
 
-### 4.10 Check Subtree 
+### 4.10 Check Subtree[./CheckSubtree.java] 
 
 T1 and T2 are two very large binary trees, with T1 much bigger than T2. Create an algorithm to determine if T2 is a subtree of T2. 
 
 #### method 1: could perform level order traversal to compare node of T1 to root of T2, worst case will have to go O(N), N is the number of nodes in T1
 
 #### method 2: could first compute the height of T2, then go to check node that have height equal to that of T2  
+
+### 4.11 Random Node
+You are implementing a binary tree class from scratch, in addition to insert. find. delete, has a method getRandom(), which returns a random node from the tree, All nodes should be equally likely to be chosen. Design and implement an algorithm for getRandom() and explain how you woul implement the rest of the methods 
+
+[java](./RandomNode.java) 
+[another java with different way to locate the node](./RandomNode2.java)
+
+### 4.12 Paths with Sum 
+
+You are given a binary tree in which each node contains an integer value (which might be positive or negative ). Design an algorithm to count the number of paths that sum to a given value. The path does not need to start or end at the root or leaf but it must go downwards (traverling only from parent to child nodes). 
+
+
+
 
 
 

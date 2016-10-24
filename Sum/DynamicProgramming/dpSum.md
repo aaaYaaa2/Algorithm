@@ -26,4 +26,16 @@ Dynamic Programming usually require more space complexity compare to other metho
 ### [Climbing Stairs](./climbingstairs.js)
 
   *how do we reach current step, from previous several conditions*
+
+### [Coin Change](./coinchange.js)
+
+  We reach the current amount by add rest of amount in addition to some coins, we can use duplicate coins 
+
+### [Unique Binary Search Trees II](./uniquebinarysearchtreeII.js)
+
+Perform Dynamic Programming on the size of tree 
+
+Left Subtree and Right Subtree has no difference if they have the same size, so we could perform deep copy to subtrees that have same size, and shift the number 
+
+be careful to set `result[0].push(null)`
   
