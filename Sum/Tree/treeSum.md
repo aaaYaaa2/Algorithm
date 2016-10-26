@@ -37,7 +37,11 @@
 
 ### Reconstruct Tree
 
-1. [Unique Binary Search Trees II](../DynamicProgramming/uniquebinarysearchtreeII.js)
+1. [Unique Binary Search Trees II]
+
+[Javascript](../DynamicProgramming/uniquebinarysearchtreeII.js)
+[Java](../DynamicProgramming/UniqueBinarySearchTreeII.java)
+
 #### [Symmetric Tree](./Tree/symmetrictree.js)
 
    *Be careful for some boundary case check*
