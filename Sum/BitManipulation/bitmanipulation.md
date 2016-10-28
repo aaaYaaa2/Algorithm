@@ -123,3 +123,22 @@ a sequence of all `1` in **signed** integer represent -1
 
 ```
 
+
+### Count Bits
+[Javascript](../DynamicProgramming/countingbits.js) 
+
+---
+
+#### Problem 5.1 Insertion 
+
+You are given two 32-bit numbers, N and M, and two bit position, i and j. Write a method to insert M into N such that M starts at bit j and ends at bit i. You can assume that the bits j through bit i have enough space to fit all of M. 
+
+[Javascript](../CC/BitManipulation/insertion.js) 
+[Java]()
+
+tricky part is how to construct the clear mask, in this problem we can construct the left and right part seperately then combine them to construct the clear mask. 
+
+Another tricky part is that when we have j = 31, then 32 is out of bound for integer number 
+
+
+
