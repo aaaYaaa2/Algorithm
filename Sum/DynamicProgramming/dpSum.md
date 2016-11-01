@@ -78,6 +78,16 @@ but we know that `rest[i] = sell[i-1]`, so we can omit rest array and make subst
 common partial sum problem 
 
 
+### House Robber II
 
+[Javascript](./houserobberII.js)
+
+[Java](./GrayCode.js)
+
+This is similar problem as House Robber I, However, since it is a circle version we need to take consideration of the start point 
+
+for instance, if we have 1 -> 2 -> 3 ->1, if we robbed 1, then it can only be 1->2 participated, if do not rob one, the it can be 2 -> 3 ->1. 
+
+To sum, if rob start at 0 then it will end at nums.length-2, if rob start at 1 and we do not rob 0, then it will ended at nums.length-1. 
 
   

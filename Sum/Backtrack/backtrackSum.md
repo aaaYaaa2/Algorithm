@@ -77,3 +77,26 @@
 	For EVERY POSITION in permutation result, you can put any number that has not appeared in the current result before this index 
 	
 	`Array.fill(flag, false);`
+
+---
+
+### Palindrome Partition
+
+[Javascript recursive](./palindromepartition.js)
+
+[Java Iterative](./PalindromePartition.java)
+
+### Generate Parenthesis (recursive and iterative)
+
+[Javascript](../String/generateparenthese.js)
+
+### Word Search 
+
+[Javascript](./wordsearch.js)
+
+Find a word in a 2D array. 
+
+
+
+
+

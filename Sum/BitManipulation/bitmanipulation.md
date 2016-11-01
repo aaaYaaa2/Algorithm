@@ -127,6 +127,11 @@ a sequence of all `1` in **signed** integer represent -1
 ### Count Bits
 [Javascript](../DynamicProgramming/countingbits.js) 
 
+### Gray Code
+
+[Javascript](../DynamicProgramming/graycode.js)
+[Java](../DynamicProgramming/GrayCode.java)
+
 ---
 
 #### Problem 5.1 Insertion 
@@ -139,6 +144,43 @@ You are given two 32-bit numbers, N and M, and two bit position, i and j. Write 
 tricky part is how to construct the clear mask, in this problem we can construct the left and right part seperately then combine them to construct the clear mask. 
 
 Another tricky part is that when we have j = 31, then 32 is out of bound for integer number 
+
+#### Problem 5.2 Binary to String
+
+Given a real number between 0 and 1 (e.g 0.72) that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print "ERROR". 
+
+Binary Representation of a double value:
+
+```
+    0.101(base 2) = 1*1/2^1 + 0*1/2^2 + 1*1/2^3;
+```
+
+while N is larger than 0 and bit number is smaller than 32
+    in each iteration, compare remain of N and current factor,
+        if remain of N is larger current factor, then set 1 to current bit, else set 0 to current bit
+if the bit number goes up to 32 return 'Error'
+
+
+#### Problem 5.3 Flip Bit to Win
+
+[Javascript](./flipbittowin.js)
+
+[Java](./FlipBitToWin.java) 
+
+You have an integer and you can flip exactly one bit from a 0 to 1. Write code to find the length of the longest sequence of 1s you could create. 
+
+Time Complexity, O(N), N is the highest 1 bits position for the number, 
+Space Complexity O(N), N is the higest 1 bits position for the number 
+
+1. get the highest bit position for the number 
+2. use an array[i] to store the number of continues 1 bit end at position i
+3. traverse the array created in step 2, when encounter 0, add it's 1 to arr[i-1] and arr[i-1] if index exist, and update a global max value at the same time 
+
+
+
+
+
+
 
 
 
