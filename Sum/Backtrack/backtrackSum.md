@@ -46,6 +46,15 @@
 	1> don't forget to create a new array subres.slice()
 	2> make a temporary array, otherwise, since the array size is keep going, will lead to infinite loop
 	
+   ```
+   	The iterative algorithm works like:
+	
+	first iterative call: []
+	second iterative call: [], [1]
+	third iterative call: [], [1], [2], [1,2]
+	
+   ```
+	
 2. [Subset II](./JS/subset2.js)
 
    Given a collection of integers that might contain duplicates, find all possible unique subset of the candidate array
