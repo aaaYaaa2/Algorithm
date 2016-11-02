@@ -65,7 +65,7 @@
 
 ## NQueen
 
-1. [NQueen](./JS/nqueen.js)
+1. [NQueen](./JS/nqueue.js)
    
    for backtrack, we need a way to represent the candidates, a way to generate possible solution, a way to valid and unvalid all solution. 
    
