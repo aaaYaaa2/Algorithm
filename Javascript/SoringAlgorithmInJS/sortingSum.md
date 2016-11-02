@@ -71,5 +71,62 @@ decide a pivot each time and divide the array into two parts by the pivot, until
 > Time Complexity: best case, average case are O(nlogn) and worst case is O(n^2), when every time you choose a extreme value for unsorted part 
 
 
+## Heap Sort
+
+[Quick Review of Heap Concept](./https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
+
+[Heap Sort Wiki](https://en.wikipedia.org/wiki/Heapsort)
+
+Use heap data structure's property, a heap can be represented use an array, with parent(i), left child(2*i+1) and right child(2*i+2).
+
+1. Build a max heap, insert element to the last element of already built heap, bubble up (swap with parents) if the heap property is been violated. 
+
+2. Heapify (heapsort): From step 1, we already have a max heap. Then each time we swap top of the heap with the bottom element, bubble down the current top with its larger child to meantain heap property, after the new top is set, we remove the last element and put it into our sorted result. Each time we have a last element in remain heap as ordered element, this element is not considered when comparing element. 
+
+> Time Complexity: average case, best case and worst case are O(nlgn) 
+
+[Javascript HeapSort](./heapsort.js)
+
+
+## Counting Sort 
+
+Counting sort can only be used to sort integers, and those integers must have a valid range. 
+
+It will need an additional array to keep numbers counts
+
+1. Find minimum and maximum number in the unsorted array 
+2. scan array again and build the count array
+3. scan the count array then calculate the aggregate count so far 
+4. starting from back, scan the array and put them inorder 
+
+> Time Complexity: since we need to scan whole array and the counts array, the whole process will take O(n+k) time complexity 
+
+[Javascript Counting Sort](./countingsort.js) 
+
+
+## Bucket Sort 
+
+Counting sort is a upgraded version of counting sort, it seperate unsorted elements into several buckets. For each bucket, we sort inside the bucket. Then concat sorted buckets that are not empty
+
+bucket sort needs extra space, the time complexity depends on the sorting method in each bucket, other parts for the sort takes O(n). 
+
+If the bucket size is smaller, sorting time for each group will decrease, but we will have to increase bucket space usage. 
+
+[Javascript Bucket Sort](./backetsort.js) 
+
+
+## Radix Sort
+
+Radix sort is also using different buckets, the bucket is for digits. 
+
+[Javascript Radix Sort](./radixsort.js)
+
+> Time Complexity: best, average, worst case O(n*k), n is the number of elements we would like to sort and k is the maximum Digits 
+
+
+
+
+
+
 
 
