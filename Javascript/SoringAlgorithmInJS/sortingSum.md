@@ -18,7 +18,7 @@ we can keep a record of last swapped position, since after the last swap, all el
 
 we can use 2 pointer, one start swap from the start and another one start swap from end, so that the element we need to swap 
 
-[Javascipt Bubble](./bubble.js)
+[Javascipt Bubble](./bubblesort.js)
 
 <div style="text-align: center;" >
     <img src="../../PIC/bubblesort.png" alt="bubblesort time" />
