@@ -114,7 +114,7 @@ bucket sort needs extra space, the time complexity depends on the sorting method
 
 If the bucket size is smaller, sorting time for each group will decrease, but we will have to increase bucket space usage. 
 
-[Javascript Bucket Sort](./backetsort.js) 
+[Javascript Bucket Sort](./bucketsort.js) 
 
 
 ## Radix Sort
