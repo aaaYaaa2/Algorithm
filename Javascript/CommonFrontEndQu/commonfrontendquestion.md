@@ -47,5 +47,5 @@ use + and - to manipulate
 
 > Generate Random Number
 
-[Generate Random String]()
+[Generate Random String](./randomstr.js)
 
