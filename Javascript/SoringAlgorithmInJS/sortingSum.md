@@ -37,7 +37,9 @@ travel through the array and find the smallest/largest in unsorted part, and swa
 
 ## Insertion Sort
 
-travel through the array, assume first element is already sorted, insert the second element, if the second element is smaller than the sorted element, shift the sorted element back. repeat the process until we reach the end of array 
+travel through the array, assume first element is already sorted, insert the second element, if the second element is smaller than the sorted element, shift the sorted element back. repeat the process until we reach the end of array
+
+[Javascript Insertion Sort](./insertionsort.js)
 
 ### Improved Insertion Sort I 
 
