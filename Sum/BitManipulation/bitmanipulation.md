@@ -141,7 +141,7 @@ You are given two 32-bit numbers, N and M, and two bit position, i and j. Write 
 [Javascript](../CC/BitManipulation/insertion.js) 
 [Java]()
 
-tricky part is how to construct the clear mask, in this problem we can construct the left and right part seperately then combine them to construct the clear mask. 
+tricky part is how to construct the clear mask, in this problem we can  construct the left and right part seperately then combine them to construct the clear mask. 
 
 Another tricky part is that when we have j = 31, then 32 is out of bound for integer number 
 
@@ -175,6 +175,26 @@ Space Complexity O(N), N is the higest 1 bits position for the number
 1. get the highest bit position for the number 
 2. use an array[i] to store the number of continues 1 bit end at position i
 3. traverse the array created in step 2, when encounter 0, add it's 1 to arr[i-1] and arr[i-1] if index exist, and update a global max value at the same time 
+
+
+#### Problem 5.4 Next Number 
+
+Given a positive integer, print the next smallest and the next largest number that have the same number of 1 bits in their binary representation. 
+
+Since we want to get next largest number with same number of 1 bits. 
+
+we want to flip a 0 to 1, if this 0 has 1s right to it. after flip, we will set the trailing to 1s to the count number of 1s -1 
+
+
+#### Problem 5.5 Debugger
+
+#### Problem 5.6 Conversion
+
+Write a function to determine the number of bits you would need to flip to convert integer A to integer B. 
+
+
+
+
 
 
 

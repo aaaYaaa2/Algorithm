@@ -59,7 +59,7 @@ A typical Divide and Conquer Approach
 
 [Javascript Merge Sort](./mergesort.js)
 
-> Time complexity analysis: best case O(N) already sorted, worst case:  
+> Time complexity analysis: best case O(N) already sorted, worst case and average case O(nlgn) 
 
 
 ## Quick Sort

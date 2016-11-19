@@ -1,5 +1,5 @@
 var shellsort = function(arr){
-	var gap = 1, temp;
+	var gap = 1, temp, len = arr.length;
 	// set gap 
 	while((gap*5+1) < arr.length) gap = gap*5 + 1;
 
@@ -12,5 +12,7 @@ var shellsort = function(arr){
 			arr[j+gap] = temp;
 		}
 	}
-	return arr; 
+	return arr;
 };
+var input = [4, 1, 6, 8, 12, 23, 4, 5];
+console.log(shellsort(input));
