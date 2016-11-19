@@ -75,7 +75,7 @@ decide a pivot each time and divide the array into two parts by the pivot, until
 
 ## Heap Sort
 
-[Quick Review of Heap Concept](./https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
+[Quick Review of Heap Concept](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
 
 [Heap Sort Wiki](https://en.wikipedia.org/wiki/Heapsort)
 
