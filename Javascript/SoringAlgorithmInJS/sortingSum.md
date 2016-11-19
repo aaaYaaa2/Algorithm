@@ -18,7 +18,7 @@ we can keep a record of last swapped position, since after the last swap, all el
 
 we can use 2 pointer, one start swap from the start and another one start swap from end, so that the element we need to swap 
 
-[Javascipt Bubble](./bubble.js)
+[Javascipt Bubble](./bubblesort.js)
 
 <div style="text-align: center;" >
     <img src="../../PIC/bubblesort.png" alt="bubblesort time" />
@@ -37,7 +37,9 @@ travel through the array and find the smallest/largest in unsorted part, and swa
 
 ## Insertion Sort
 
-travel through the array, assume first element is already sorted, insert the second element, if the second element is smaller than the sorted element, shift the sorted element back. repeat the process until we reach the end of array 
+travel through the array, assume first element is already sorted, insert the second element, if the second element is smaller than the sorted element, shift the sorted element back. repeat the process until we reach the end of array
+
+[Javascript Insertion Sort](./insertionsort.js)
 
 ### Improved Insertion Sort I 
 
@@ -73,7 +75,7 @@ decide a pivot each time and divide the array into two parts by the pivot, until
 
 ## Heap Sort
 
-[Quick Review of Heap Concept](./https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
+[Quick Review of Heap Concept](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
 
 [Heap Sort Wiki](https://en.wikipedia.org/wiki/Heapsort)
 
@@ -112,7 +114,7 @@ bucket sort needs extra space, the time complexity depends on the sorting method
 
 If the bucket size is smaller, sorting time for each group will decrease, but we will have to increase bucket space usage. 
 
-[Javascript Bucket Sort](./backetsort.js) 
+[Javascript Bucket Sort](./bucketsort.js) 
 
 
 ## Radix Sort
